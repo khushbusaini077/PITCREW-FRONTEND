@@ -1,0 +1,37 @@
+{
+  "name": "pitcrew-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "gen:types": "openapi-typescript ../contracts/openapi.yaml -o src/lib/types/api.d.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "@tanstack/react-query": "^5.104.1",
+    "leaflet": "^1.9.4",
+    "next": "^15.5.27",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-leaflet": "^5.0.0",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.27",
+    "openapi-typescript": "^7.13.0",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  }
+}
